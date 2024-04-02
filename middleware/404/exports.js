@@ -1,0 +1,23 @@
+const HTML = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Could Not Find URL</title>
+</head>
+<body>
+    <h2>that has 404 errors</h2>
+    <img width="600" src="https://i.pinimg.com/736x/ad/67/dd/ad67dd7613600476845fe58edf9f2e1d.jpg" alt="">
+    <h2>why would there be a website called <span id="url-sub"></span></h2>
+    <script>
+
+        const urlPeice = document.querySelector('#url-sub')
+        urlPeice.textContent = window.location.href
+
+    </script>
+    
+</body>
+</html>`
+
+
+module.exports = HTML
